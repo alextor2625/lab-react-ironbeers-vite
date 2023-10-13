@@ -1,0 +1,74 @@
+
+.App {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    background-color: rgb(0, 162, 255);
+    text-align: center;
+    padding: 1rem 0rem;
+    background-repeat: no-repeat;
+}
+
+.home-img {
+    width: 100%;
+}
+
+.home-page {
+    text-align: center;
+}
+
+.home-page > a > h2 {
+    color: black;
+}
+
+.home-container {
+    margin: 0rem 4rem;
+}
+
+.beers-image {
+    width: 80px;
+    height: 150px;
+    
+}
+
+.beers-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    grid-row-gap: 2rem;
+}
+
+.beers-container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+.details-container > p >span{
+font-weight: bold;
+}
+
+.details-container2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    text-align: left;
+}
+
+.details-beer-image {
+    margin-top: 1rem;
+    width: 80px;
+}
+
+.details-container {
+    text-align: center;
+    margin: 0rem 4rem;
+}
+
+.details-container3 {
+    text-align: left;
+}
