@@ -4,10 +4,9 @@ import { BeersContext } from "../context/beers.context";
 function RandomBeerPage() {
   const { beers } = useContext(BeersContext);
   const [randombeer, setRandomBeer] = useState(null);
- console.log("Line 14 - Data:", beers);
   useEffect(() => {
-    let thisRandomBeer = beers
-    console.log("Line 14 - Data:", thisRandomBeer);
+    let thisRandomBeer = beers[Math.floor(Math.random()*beers.length)]
+    console.log("Random Beer", thisRandomBeer);
     setRandomBeer(thisRandomBeer);
   }, [beers]);
 
