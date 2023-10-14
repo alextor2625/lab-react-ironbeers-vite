@@ -4,6 +4,7 @@ import randomBeerImage from '../assets/random-beer.png';
 import newBeerImage from '../assets/new-beer.png';
 
 
+
 function HomePage() {
   return (
     <div className='home-container'>
