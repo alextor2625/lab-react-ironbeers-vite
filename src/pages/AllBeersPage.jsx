@@ -1,15 +1,21 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { BeersContext } from "../context/beers.context";
 import { Link } from "react-router-dom";
+import SearchForm from "../components/SearchForm";
 
 function AllBeersPage() {
  const {beers} = useContext(BeersContext)
+ const [search, setSearch] = useState('');
+
+ let filtered = search? beers.filter((beer) => beer.name.toLowerCase().includes(search.toLowerCase())) : beers;
+
 
   return (
     <div>
       <h1>All beers page</h1>
+        <SearchForm setSearch={setSearch} />
       <div className="beers-container">
-      {beers.map((beer) => {
+      {filtered.map((beer) => {
         return (
             <div className="beers-container2">
               <Link to={`/beers/${beer._id}`}>
